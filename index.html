@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/event.js"></script>
+</head>
+<body>
+    <!-- мышка -->
+        <!-- 1 -->
+    <button id="text">Вы нажали на меня!</button>
+    <script>
+        let button = document.getElementById('text');
+        const title = ['Привет', 'Как дела?', 'Все хорошо?'];
+
+        function text__btn(){
+            document.getElementById('text').textContent="Привет";
+        }
+        button.addEventListener("click" , text__btn);
+    </script>
+
+        <!-- 2 -->
+    <div class="kvadrat" id="square"></div>
+    <script>
+        const square = document.getElementById('square');
+        document.addEventListener('mousemove', function(event) {
+            square.style.left = event.clientX + 'px';
+            square.style.top = event.clientY + 'px';
+        });
+    </script>
+    <h1>Код заданий</h1>
+    <img src="assets/image/Снимок экрана 2025-04-03 162132.jpg" alt="">
+</body>
+</html>
