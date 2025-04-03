@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/event.js"></script>
 </head>
+    <style>
+        .btn{
+        position: absolute;
+        z-index: 999;
+    }
+    .kvadrat{
+        position: absolute;
+        z-index: 1;
+    }
+    </style>
 <body>
     <!-- мышка -->
         <!-- 1 -->
-    <button id="text">Вы нажали на меня!</button>
+    <button class="btn" id="text">Вы нажали на меня!</button>
     <script>
         let button = document.getElementById('text');
         const title = ['Привет', 'Как дела?', 'Все хорошо?'];
